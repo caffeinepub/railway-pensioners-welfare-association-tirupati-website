@@ -43,7 +43,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-3">
             <img
-              src="/assets/____ (1).jpg"
+              src="/assets/uploads/gemini_generated_image_93cc9e93cc9e93cc-019d3248-54c8-70cf-ac7f-83ddd1931ac8-1.png"
               alt="Railway Pensioners' Welfare Association Logo"
               className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-primary-foreground"
             />
