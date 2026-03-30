@@ -268,6 +268,57 @@ export default function PlacesPage() {
                 printed copy of your ticket and a valid Aadhaar card for entry.
               </p>
             </div>
+
+            <div className="mt-5 p-4 bg-red-50 border border-red-200 rounded-lg">
+              <h3 className="text-base font-semibold text-red-800 mb-3 flex items-center gap-2">
+                📞 TTD Helpline Numbers (24×7)
+              </h3>
+              <p className="text-sm text-red-700 mb-3">
+                For assistance with Tirumala Thirupati Devasthanam (TTD)
+                services, you can reach the official 24×7 call center through
+                the following contact details:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="bg-white rounded-md p-3 border border-red-100">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold mb-1">
+                    TTD Toll Free (24×7)
+                  </p>
+                  <p className="text-base font-bold text-red-700">
+                    1800 425 1333
+                  </p>
+                </div>
+                <div className="bg-white rounded-md p-3 border border-red-100">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold mb-1">
+                    TTD Call Center
+                  </p>
+                  <p className="text-base font-bold text-red-700">
+                    0877-2277777
+                  </p>
+                </div>
+                <div className="bg-white rounded-md p-3 border border-red-100">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold mb-1">
+                    TTD Tirupati Office
+                  </p>
+                  <p className="text-base font-bold text-red-700">
+                    0877-2233333
+                  </p>
+                </div>
+                <div className="bg-white rounded-md p-3 border border-red-100">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold mb-1">
+                    E-Darshan Helpdesk
+                  </p>
+                  <p className="text-base font-bold text-red-700">
+                    0877-2264444
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">
+                Official TTD Website:{" "}
+                <span className="font-semibold">tirupatibalaji.ap.gov.in</span>{" "}
+                &nbsp;|&nbsp; TTD Mobile App available on Play Store &amp; App
+                Store
+              </p>
+            </div>
           </CardContent>
         </Card>
 
