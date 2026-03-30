@@ -53,6 +53,33 @@ const tamilNaduPlaces = [
   { name: "Vellore - Golden Temple", distance: "~90 km" },
 ];
 
+const darshans = [
+  {
+    title: "Special Entry Darshan (₹300)",
+    description:
+      "Provides faster access (1–2 hours) compared to free darshan. Tickets are booked online through the official TTD website or mobile app. Quotas are released monthly and Aadhaar registration is required.",
+    color: "bg-indigo-100",
+    textColor: "text-indigo-800",
+    icon: "1",
+  },
+  {
+    title: "Sarva Darshan (Free / SSD)",
+    description:
+      "Free darshan where time-slot tokens are issued at designated counters in Tirupati (SSD) or directly at the Vaikuntam Queue Complex. Waiting time is typically 5–20 hours depending on the season.",
+    color: "bg-sky-100",
+    textColor: "text-sky-800",
+    icon: "2",
+  },
+  {
+    title: "Divya Darshan (Free)",
+    description:
+      "A free darshan exclusively for pilgrims who walk up to Tirumala via the Alipiri or Srivari Mettu footpaths. Token scanning is required at the top of the hill. Usually offers quicker entry than regular queue darshan.",
+    color: "bg-teal-100",
+    textColor: "text-teal-800",
+    icon: "3",
+  },
+];
+
 export default function PlacesPage() {
   return (
     <div className="py-12 bg-background">
@@ -182,6 +209,64 @@ export default function PlacesPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Tirumala Darshan Booking Procedures */}
+        <Card className="border-2 shadow-md mt-8" data-ocid="darshan.card">
+          <CardHeader className="bg-indigo-50 rounded-t-lg">
+            <div className="flex items-center gap-2">
+              <Badge className="bg-indigo-600 text-white">Darshan Info</Badge>
+            </div>
+            <CardTitle className="text-2xl text-indigo-900">
+              Tirumala Darshan Booking Procedures
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pt-4">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              Tirumala offers various darshan types including ₹300 Special Entry
+              (online), free Sarva Darshan (tokens/spot), and special quotas for
+              senior citizens, infants, and pilgrims walking up the hills.
+              Tickets are booked online via the official TTD website or mobile
+              app, with quotas releasing monthly, requiring Aadhaar for
+              registration.
+            </p>
+
+            <h3 className="text-lg font-semibold mb-4 text-indigo-800">
+              Types of Tirumala Darshan
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {darshans.map((d) => (
+                <div
+                  key={d.title}
+                  className={`rounded-lg p-4 border ${d.color} border-indigo-100`}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="flex-shrink-0 w-7 h-7 bg-indigo-600 rounded-full flex items-center justify-center text-sm font-bold text-white">
+                      {d.icon}
+                    </span>
+                    <h4 className={`font-semibold text-sm ${d.textColor}`}>
+                      {d.title}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {d.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 p-4 bg-indigo-50 border border-indigo-200 rounded-lg">
+              <p className="text-sm text-indigo-800">
+                <strong>Tip:</strong> Book your Special Entry Darshan tickets
+                well in advance at{" "}
+                <span className="font-semibold">tirupatibalaji.ap.gov.in</span>{" "}
+                or the official{" "}
+                <span className="font-semibold">TTD Mobile App</span>. Carry a
+                printed copy of your ticket and a valid Aadhaar card for entry.
+              </p>
             </div>
           </CardContent>
         </Card>
