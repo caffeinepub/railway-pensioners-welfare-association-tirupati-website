@@ -78,6 +78,30 @@ const darshans = [
     textColor: "text-teal-800",
     icon: "3",
   },
+  {
+    title: "Srivani Trust Darshan",
+    description:
+      "Privileged darshan offered through the Srivani Trust. Requires a mandatory donation of Rs. 10,000 to the Srivani Trust plus a Rs. 500 booking fee. Can be booked online, at the airport, or offline at designated counters.",
+    color: "bg-yellow-100",
+    textColor: "text-yellow-800",
+    icon: "4",
+  },
+  {
+    title: "Senior Citizen / Physically Challenged Darshan",
+    description:
+      "A less crowded, comfortable darshan specially arranged for senior citizens aged 65 years and above, and for differently abled individuals. Requires prior online registration through the official TTD portal.",
+    color: "bg-orange-100",
+    textColor: "text-orange-800",
+    icon: "5",
+  },
+  {
+    title: "Supatham Darshan",
+    description:
+      "Special darshan facility available for parents accompanied by infants below 1 year of age, and for serving Indian Army personnel. No prior booking required; entry is facilitated at designated counters.",
+    color: "bg-green-100",
+    textColor: "text-green-800",
+    icon: "6",
+  },
 ];
 
 export default function PlacesPage() {
@@ -225,19 +249,19 @@ export default function PlacesPage() {
           </CardHeader>
           <CardContent className="pt-4">
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Tirumala offers various darshan types including ₹300 Special Entry
-              (online), free Sarva Darshan (tokens/spot), and special quotas for
-              senior citizens, infants, and pilgrims walking up the hills.
-              Tickets are booked online via the official TTD website or mobile
-              app, with quotas releasing monthly, requiring Aadhaar for
-              registration.
+              Tirumala offers various darshan types to suit different pilgrims —
+              from paid privileged entry to free queue darshan, and special
+              provisions for senior citizens, differently abled, infants, army
+              personnel, and Srivani Trust donors. Tickets are booked online via
+              the official TTD website or mobile app, with Aadhaar registration
+              required.
             </p>
 
             <h3 className="text-lg font-semibold mb-4 text-indigo-800">
               Types of Tirumala Darshan
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {darshans.map((d) => (
                 <div
                   key={d.title}
